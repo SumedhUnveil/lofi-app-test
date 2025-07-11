@@ -1,19 +1,18 @@
-import React from 'react';
-import * as Dialog from '@radix-ui/react-dialog';
 import {
-  DndContext,
   closestCenter,
+  DndContext,
   PointerSensor,
   useSensor,
   useSensors
 } from '@dnd-kit/core';
 import {
-  arrayMove,
   SortableContext,
   useSortable,
-  verticalListSortingStrategy,
+  verticalListSortingStrategy
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
+import * as Dialog from '@radix-ui/react-dialog';
+import React from 'react';
 
 interface SheetProps {
   open: boolean;

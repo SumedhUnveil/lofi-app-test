@@ -5,7 +5,7 @@ import ReactAudioSpectrum from 'react-audio-spectrum';
 import rainSound from '../assets/rain.mp3';
 
 const Player: React.FC = () => {
-  const { tracks: fetchedTracks, loading, error } = useLofiTracks(10);
+  const { tracks: fetchedTracks, loading } = useLofiTracks(10);
   const [tracks, setTracks] = useState<any[]>([]);
   const [selected, setSelected] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
